@@ -15,7 +15,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontFamily": "'Fira Code','Segoe UI Emoji'",
+  "terminal.integrated.fontFamily": "'Fira Code','MesloLGS NF', 'Segoe UI Emoji'",
 
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
