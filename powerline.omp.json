@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#580000",
+          "background": "#003543",
+          "properties": {
+            "prefix": "",
+            "windows": "",
+            "postfix": ""
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#f1fbfe",
+          "background": "#003543",
+          "properties": {
+            "prefix": "",
+            "style": "full",
+            "folder_separator_icon": "/"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#09362e",
+          "background": "#addc12",
+          "properties": {
+            "display_stash_count": true,
+            "branch_icon": "",
+            "commit_icon": "",
+            "branch_gone_icon": "\b",
+            "display_upstream_icon": false,
+            "status_colors_enabled": true,
+            "display_status": true,
+            "local_staged_icon": "",
+            "local_working_icon": "",
+            "local_changes_color": "#f6b117",
+            "ahead_and_behind_color": "#f26d50",
+            "behind_color": "#f17c37",
+            "ahead_color": "#89d1dc",
+            "stash_count_icon": "\uF692 "
+          }
+        }
+      ]
+    }
+  ]
+}

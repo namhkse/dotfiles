@@ -1,0 +1,19 @@
+# Global Config
+[user]
+	name = namhk
+	email = namhkgit
+[core]
+	editor = vim
+	autocrlf = true
+	safecrlf = false
+[alias]
+	lg = "log --pretty=format:'%C(bold blue)%h %C( yellow)(%ar) %C(dim white)- %an%Creset: %C(green)%s %C(auto)%d' --graph"
+	ls-commited-file = "show --pretty=format:'Note: %Cgreen%s%Creset' --name-only"
+	st = "status"
+
+[color "decorate"]
+	head = 160
+	branch = 32
+	remoteBranch = white
+[diff]
+	tool = vimdiff
