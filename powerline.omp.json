@@ -9,7 +9,6 @@
       "type": "prompt",
       "alignment": "left",
       "segments": [
-        
         {
           "type": "path",
           "style": "powerline",
@@ -29,35 +28,23 @@
           "foreground": "#09362e",
           "background": "#addc12",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }} #FF0000 {{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }} #f6b117 {{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
-            "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
+            "{{ if gt .Ahead 0 }}#14c2dd{{ end }}",
             "{{ if gt .Behind 0 }}#B388FB{{ end }}"
           ],
-
           "properties": {
             "fetch_status": true,
             "fetch_stash_count": true,
             "fetch_upstream_icon": true,
-            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}",
-            "ahead_and_behind_color": "#f26d50",
-
+            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}",
             "local_staged_icon": "",
             "local_working_icon": "",
-
             "stash_count_icon": "\uF692 ",
             "display_stash_count": true,
             "display_upstream_icon": true,
             "display_status": true,
-
             "status_colors_enabled": true,
-            "color_background": "#ff0000",
-            "local_changes_color": "#f6b117",
-            "working_color": "#e50079",
-            "staging_background": "#ff0000",
-            "ahead_color": "#2EC4B6",
-            "behind_color": "#8A4FFF",
-
             "prefix": " ",
             "postfix": " ",
             "branch_icon": "",
