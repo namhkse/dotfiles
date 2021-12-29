@@ -2,11 +2,11 @@ call plug#begin('~/.vim/plugged')
 	" Plug 'preservim/nerdtree'
 	" Plug 'ryanoasis/vim-devicons'
 	Plug 'vim-airline/vim-airline'
+	"Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 """" OTHER SOURCESG
 source ~/.dotfiles/line.vim
 """" GENERAL SETTINGS
-let g:solarized_termcolors=256
 colorscheme gruvbox						" Set theme
 syntax on								" Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -29,7 +29,7 @@ set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=4                           " Insert 2 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 "set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-"set expandtab                           " Converts tabs to spaces
+set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
