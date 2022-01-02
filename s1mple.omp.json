@@ -13,7 +13,7 @@
                     "background": "transparent",
                     "properties": {
                         "prefix": " ",
-                        "postfix": "",
+                        "postfix": " ",
                         "style": "full",
                         "folder_separator_icon": "/"
                     }
@@ -25,9 +25,8 @@
                     "foreground": "#ffffff",
                     "background": "transparent",
                     "properties": {
-                       "prefix": " ",
-                       "postfix": ""
-
+                        "prefix": "",
+                        "postfix": ""
                     }
                 },
                 {
@@ -36,7 +35,7 @@
                     "foreground": "#0077c2",
                     "properties": {
                         "prefix": "",
-                        "text": " \u276F"
+                        "text": "\u276F"
                     }
                 }
             ]
