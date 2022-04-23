@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 16.5,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
@@ -8,9 +8,7 @@
 
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorTheme": "Gruvbox Dark Soft",
   "workbench.preferredLightColorTheme": "Monokai",
-  "workbench.editorAssociations": {"*.ipynb": "jupyter.notebook.ipynb"}, 
 
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.tabs.enabled": true,
@@ -19,11 +17,8 @@
 
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
-  "explorer.confirmDelete": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
-  // VIM SETTINGS
+  // Vim
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.easymotion": true,
@@ -35,7 +30,7 @@
       "after": ["<Esc>"]
     }
   ],
-"vim.normalModeKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<C-n>"],
       "commands": [":nohl"]
@@ -55,37 +50,11 @@
     { 
       "before": ["s", "j"],
       "after": ["<C-w>", "j"]
-    },
-    { 
-      "before": ["x"],
-      "after": ["\"", "_" ,"x"]
-    },
-    { 
-      "before": ["d", "w"],
-      "after": ["\"", "_", "d", "w"]
-    },
-    { 
-      "before": ["d", "b"],
-      "after": ["\"", "_", "d", "b"]
-    },
-    { 
-      "before": ["d", "e"],
-      "after": ["\"", "_", "d", "e"]
-    },
-    { 
-      "before": ["d", "$"],
-      "after": ["\"", "_", "d", "$"]
-    },
-    { 
-      "before": ["d", "0"],
-      "after": ["\"", "_", "d", "0"]
     }
   ],
   "vim.handleKeys": {
     "<C-a>": false, // Ctrl-A = select all
     "<C-f>": false  // Ctrl-F = search
   },
-  
-  // EXTENSION SETTINGS
-  "liveServer.settings.donotVerifyTags": true
+  "tabnine.experimentalAutoImports": true
 }

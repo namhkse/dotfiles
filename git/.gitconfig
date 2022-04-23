@@ -1,21 +1,18 @@
 # Global Config
 [user]
 	name = namhk
-	email = namhkgit
+	email = namhk@email.com
 [core]
 	editor = vim
-	autocrlf = true
-	safecrlf = false
+	autocrlf = false
 [alias]
 	lg = "log --pretty=format:'%C(bold blue)%h %C( yellow)(%ar) %C(dim white)- %an%Creset: %C(green)%s %C(auto)%d' --graph"
 	lga = "lg --all"
 	ls-commited-file = "show --pretty=format:'Note: %Cgreen%s%Creset' --name-only"
 	st = "status"
 	br = "branch"
-
-[color "decorate"]
-	head = 160
-	branch = 32
-	remoteBranch = white
+	cm = "commit"
 [diff]
 	tool = vimdiff
+[init]
+	defaultBranch = main
