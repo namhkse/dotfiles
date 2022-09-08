@@ -1,19 +1,15 @@
 {
   "editor.fontSize": 16,
-  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.suggestSelection": "first",
-  "editor.fontFamily": "'Fira Code', 'Segoe UI Emoji'",
+  "editor.fontFamily": "DejaVu Sans Mono",
 
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.preferredLightColorTheme": "Monokai",
-
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontFamily": "'Fira Code','MesloLGS NF', 'Segoe UI Emoji'",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#a913ff"
+  },
 
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
@@ -52,9 +48,12 @@
       "after": ["<C-w>", "j"]
     }
   ],
+  "vim.shell": "/bin/bash",
+  "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false, // Ctrl-A = select all
     "<C-f>": false  // Ctrl-F = search
   },
-  "tabnine.experimentalAutoImports": true
+  "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+  "explorer.confirmDelete": false
 }
