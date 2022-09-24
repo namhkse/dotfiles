@@ -1,10 +1,10 @@
 # Global Config
 [user]
 	name = namhk
-	email = namhk@email.com
+	email = namhkse@gmail.com
 [core]
 	editor = vim
-	autocrlf = false
+	autocrlf = input
 [alias]
 	lg = "log --pretty=format:'%C(bold blue)%h %C( yellow)(%ar) %C(dim white)- %an%Creset: %C(green)%s %C(auto)%d' --graph"
 	lga = "lg --all"
@@ -16,3 +16,5 @@
 	tool = vimdiff
 [init]
 	defaultBranch = main
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
