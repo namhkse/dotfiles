@@ -12,6 +12,7 @@
 	st = "status"
 	br = "branch"
 	cm = "commit"
+	ck = "checkout"
 [diff]
 	tool = vimdiff
 [init]

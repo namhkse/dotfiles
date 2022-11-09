@@ -1,19 +1,16 @@
 {
-  "editor.fontSize": 15,
+  "breadcrumbs.enabled": false,
+  "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.suggestSelection": "first",
-  "editor.fontFamily": "DejaVu Sans Mono",
-
+  "editor.fontFamily": "Iosevka Term SS18 Regular",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#a913ff"
   },
-
-  "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
-
   // Vim
   "vim.hlsearch": true,
   "vim.incsearch": true,
@@ -22,43 +19,93 @@
   "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "view.explorer"
+      ]
     },
     {
-      "before": ["<C-q>"],
-      "commands": [":q"]
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": ["s", "h"],
-      "after": ["<C-w>", "h"]
-    },
-    { 
-      "before": ["s", "k"],
-      "after": ["<C-w>", "k"]
+      "before": [
+        "<C-q>"
+      ],
+      "commands": [
+        ":q"
+      ]
     },
     {
-      "before": ["s", "l"],
-      "after": ["<C-w>", "l"]
+      "before": [
+        "s",
+        "h"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
     },
-    { 
-      "before": ["s", "j"],
-      "after": ["<C-w>", "j"]
+    {
+      "before": [
+        "s",
+        "k"
+      ],
+      "after": [
+        "<C-w>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "l"
+      ],
+      "after": [
+        "<C-w>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "s",
+        "j"
+      ],
+      "after": [
+        "<C-w>",
+        "j"
+      ]
     }
   ],
   "vim.shell": "/bin/bash",
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false, // Ctrl-A = select all
-    "<C-f>": false  // Ctrl-F = search
+    "<C-f>": false // Ctrl-F = search
   },
   "terminal.integrated.fontFamily": "DejaVu Sans Mono",
   "explorer.confirmDelete": false,
-  "jake.autoDetect": "on"
+  "jake.autoDetect": "on",
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "gitlens.defaultDateLocale": null
 }
