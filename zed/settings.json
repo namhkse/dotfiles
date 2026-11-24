@@ -1,0 +1,63 @@
+{
+  "terminal": {
+    "dock": "bottom",
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "edit_predictions": {
+    "button": false,
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "project_panel": {
+    "dock": "left",
+    "hide_hidden": true,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  "status_bar": {
+    "active_language_button": false,
+    "cursor_position_button": false,
+    "experimental.show": true,
+  },
+  "show_signature_help_after_edits": false,
+  "auto_signature_help": false,
+  "sticky_scroll": {
+    "enabled": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "selection_highlight": false,
+  "cursor_blink": false,
+  "cursor_animation": {
+    "enabled": true,
+  },
+  "window_title_format": "${fileName}",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "file_types": {
+    "tailwindcss": ["*.css"],
+  },
+  "linked_edits": true,
+  "show_edit_predictions": false,
+  "semantic_tokens": "off",
+  "indent_guides": {
+    "enabled": true,
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "theme": {
+    "mode": "light",
+    "light": "macOS Classic Light",
+    "dark": "macOS Classic Dark",
+  },
+}
